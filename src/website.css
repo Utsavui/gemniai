@@ -35,10 +35,7 @@ body{
  
 
 }
-.red{
-  color: brown;
-  background-color: blue;
-}
+
 .addchat{
   margin-top: 50px;
   margin-left: 20px;
@@ -76,17 +73,19 @@ body{
   border-top-left-radius:10px;
   height:30px;
   gap: 20px;
-  width: 220px;
+  width: 180px;
   margin-top: 5px;
   display: flex;
+ 
   
  
 }
 .downdiv:hover{
-  cursor: pointer;
   background-color: blue;
   
+
 }
+
 
 
 .div{
@@ -100,11 +99,9 @@ body{
 .gemini{
 color: aliceblue;
 position: absolute;
-
-top: 0;
-left: 230px;
-height: max-content;
-width: 84vw;
+left:250px;
+height: 80vh;
+width: 80vw;
 
 
 
@@ -116,6 +113,7 @@ width: 84vw;
   
 }
 .ask{
+  
   border: solid rgb(13, 8, 8) 2px;
   border-radius: 20px;
   align-items: center;
@@ -123,10 +121,11 @@ width: 84vw;
   gap: 10px;
   width: 800px;
   height: 50px;
-  position: fixed;
+  position: absolute;
   top:620px;
-  left: 28%;
-  background:linear-gradient(to right,rgb(109, 185, 226),rgb(134, 87, 229));;
+  left:90px;
+  background:linear-gradient(to right,rgb(109, 185, 226),rgb(134, 87, 229));
+  
   
 }
 .inp{
@@ -134,7 +133,7 @@ width: 84vw;
   width: 670px;
   border: none;
   outline: none;
-  background:linear-gradient(to right,rgb(109, 185, 226),rgb(134, 87, 229));;
+  background:linear-gradient(to right,rgb(109, 185, 226),rgb(134, 87, 229));
   color: black;
   cursor: pointer;
   
@@ -176,6 +175,7 @@ width: 84vw;
 
 }
 .you{
+  color: bisque;
   margin-right: 20px;
   text-align: right;
   font-style: bold;
@@ -185,11 +185,13 @@ width: 84vw;
 .ai{
   margin-left: 20px;
  text-align:justify;
- 
+  line-height: 30px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(157, 172, 55);
-  font-size:17px;
-  line-height: 27px;
+  color:rgba(33, 33, 229, 0.91);
+ 
+  font-size:20px;
+  line-height: 40px;
+
 
   
   
@@ -199,10 +201,13 @@ width: 84vw;
 
   
 }
-
-.highlight-question{
-  color: brown;
+.red{
+  color:#0fb2c7e4;
+ line-height: 35px;
+ font-size: 23px;
+ font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 .ais{
@@ -215,13 +220,17 @@ width: 84vw;
   cursor: pointer;
 }
 .response{
+  position: absolute;
   text-align:end;
   height: 500px;
-  margin-left: 20px;
-  margin-right: 10px;
+  width: 80vw;
   overflow:scroll;
-  
+ 
   scroll-behavior: smooth;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  
   scrollbar-width: none;
   background-color: rgba(52, 47, 47, 0.692);
   
@@ -234,8 +243,12 @@ width: 84vw;
   font-weight: bold;
   border-radius:7px;
   background-color: rgb(237, 72, 213);
-  width: 170px;
+  width: 160px;
   cursor: pointer;
+  position: relative;
+  right:15px;
+
+  
 }
 .sidep:hover{
   background-color: rgb(236, 123, 219);
@@ -246,6 +259,37 @@ width: 84vw;
   scroll-behavior: smooth;
   overflow: scroll;
 }
+.noi{
+  
+  position: fixed;
+  top: 300px;
+left:680px;
+  background-color:aqua;
+  color: white;
+  padding-right: 3px;
+  color: blue;
+  font-size: 9px;
+
+  
+ 
+}
+.noimobile{
+  position: fixed;
+  top: 300px;
+  left:140px;
+  background-color:aqua;
+  color: white;
+  padding-right: 1px;
+  color: blue;
+  font-size: 7px;
+
+
+}
+
+
+
+
+
 
 
 .loader{
@@ -277,3 +321,140 @@ width: 84vw;
   
 }
 
+
+
+.highlight {
+  background-color: yellow;
+  transition: background-color 1s ease;
+  animation: fadeHighlight 2s forwards;
+}
+
+@keyframes fadeHighlight {
+  0% { background-color: rgb(206, 206, 175); }
+  100% { background-color: transparent; }
+}
+
+
+@media screen and (max-width: 700px){
+body{
+  background-color:rgba(15, 4, 4, 0.86);
+}
+ .sidenavs{
+  height:100vh;
+  position: fixed;
+  z-index: 2;
+  top:0;
+  background:linear-gradient(to top,rgb(44, 167, 167),rgba(91, 189, 209, 0.848));;
+
+ 
+  
+
+ }
+ .ask{
+  background:linear-gradient(to right,rgb(44, 167, 167),rgb(91, 189, 209));;
+
+
+ }
+ .inp{
+  background:linear-gradient(to right,rgb(44, 167, 167),rgb(91, 189, 209));;
+
+
+ }
+ .gemini{
+  position:relative;
+  z-index: 0;
+  width:70vw;
+  height:100vh;
+ 
+  
+
+
+  
+  
+
+  
+  
+  
+
+ }
+ 
+ .preview{
+  mix-blend-mode: multiply;
+  width:30px;
+  height:30px;
+ }
+ .you{
+font-size: 20px;
+color: beige;
+line-height: 55px;
+line-break:normal;
+ }
+ .ai{
+  font-size: 20px;
+  color: #5C1A1B;
+  line-height: 30px;
+  line-break:normal;
+  
+
+
+
+  
+  
+
+ }
+ .red{
+ color: #3B1E1E;
+ line-height: 35px;
+ font-size: 23px;
+ 
+
+ line-break:normal;
+
+ }
+ .minigpt{
+  font-size: 25px;
+  position: relative;
+  
+  color:blueviolet;
+ }
+ 
+ .ais{
+  font-size: 15px;
+  
+
+ }
+ .response{
+  background-color:rgba(237, 222, 222, 0.463);
+  width:77vw;
+  height:70vh;
+  position: absolute;
+  font-size: 10px;
+
+  padding-left:7px;
+  padding-right:7px;
+  
+  z-index:0;
+  justify-self: center;
+  scrollbar-width: 3px;
+  
+ }
+ .user{
+ position:fixed;
+ width:180px;
+ left:80px;
+ 
+  
+
+
+
+
+
+
+  
+
+
+
+ }
+
+
+}

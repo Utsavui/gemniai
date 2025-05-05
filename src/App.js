@@ -1,4 +1,4 @@
-import {Headers, ImageUploader} from './website.jsx';
+import { ImageUploader} from './website.jsx';
 
 function App() {
   return (

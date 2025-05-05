@@ -19,11 +19,11 @@ const onSent= async (prompt)=>{
    setloading(true)
    const res=await run(input)
    
-   
+   setloading(false)
    
   
    setpp(res)
-   setloading(false)
+   
    setinput('')
 
 
