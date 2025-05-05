@@ -1,0 +1,279 @@
+body{
+  background-color:rgb(8, 8, 14);
+  transition: background-color 0.5s  linear;
+
+}
+
+.sidenavs{
+  position: fixed;
+  background:linear-gradient(to bottom,rgb(109, 185, 226),rgb(134, 87, 229));
+  height: 100vh;
+  width:15vw;
+  border-right: solid rgb(73, 33, 159) 2px;
+  border-top: solid rgb(73, 33, 159) 2px;
+  border-bottom: solid rgb(73, 33, 159) 2px;
+  transition: width 0.1s linear;
+
+  
+}
+
+.menu{
+  height:23px;
+  width: 23px;
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+ 
+
+
+}
+
+.add{
+  height:23px;
+  width: 23px;
+  
+ 
+
+}
+.red{
+  color: brown;
+  background-color: blue;
+}
+.addchat{
+  margin-top: 50px;
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.174);
+}
+.addchat:hover{
+  background-color: rgba(84, 45, 45, 0.174);;
+}
+
+.recent{
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.downnav{
+  
+  margin-left: 7px;
+  text-align: center;
+  position: fixed;
+  top: 530px;
+  
+  
+}
+.downdiv{
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius:10px;
+  border-top-left-radius:10px;
+  height:30px;
+  gap: 20px;
+  width: 220px;
+  margin-top: 5px;
+  display: flex;
+  
+ 
+}
+.downdiv:hover{
+  cursor: pointer;
+  background-color: blue;
+  
+}
+
+
+.div{
+  width: 20px;
+  height: 20px;
+  justify-content:center;
+  margin-left: 4px;
+  
+  
+}
+.gemini{
+color: aliceblue;
+position: absolute;
+
+top: 0;
+left: 230px;
+height: max-content;
+width: 84vw;
+
+
+
+
+}
+.gemini h1{
+  margin-left: 7px;
+  
+  
+}
+.ask{
+  border: solid rgb(13, 8, 8) 2px;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  width: 800px;
+  height: 50px;
+  position: fixed;
+  top:620px;
+  left: 28%;
+  background:linear-gradient(to right,rgb(109, 185, 226),rgb(134, 87, 229));;
+  
+}
+.inp{
+  margin-left: 5px;
+  width: 670px;
+  border: none;
+  outline: none;
+  background:linear-gradient(to right,rgb(109, 185, 226),rgb(134, 87, 229));;
+  color: black;
+  cursor: pointer;
+  
+}
+.inp::placeholder{
+  color: black;
+
+}
+.gallery{
+  
+  display: none;
+  
+  
+
+}
+
+.preview{
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+
+}
+.user{
+ position: fixed;
+ left:47%;
+ top: 280px;
+  color: rgb(218, 199, 199);
+  font-size: 15px;
+ 
+}
+.users{
+  
+  top:80px;
+  
+  
+  font-size:10px;
+
+}
+.you{
+  margin-right: 20px;
+  text-align: right;
+  font-style: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.ai{
+  margin-left: 20px;
+ text-align:justify;
+ 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(157, 172, 55);
+  font-size:17px;
+  line-height: 27px;
+
+  
+  
+  
+
+
+
+  
+}
+
+.highlight-question{
+  color: brown;
+}
+
+
+.ais{
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+
+.repro{
+  cursor: pointer;
+}
+.response{
+  text-align:end;
+  height: 500px;
+  margin-left: 20px;
+  margin-right: 10px;
+  overflow:scroll;
+  
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  background-color: rgba(52, 47, 47, 0.692);
+  
+ 
+  
+}
+.sidep{
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  border-radius:7px;
+  background-color: rgb(237, 72, 213);
+  width: 170px;
+  cursor: pointer;
+}
+.sidep:hover{
+  background-color: rgb(236, 123, 219);
+}
+.recentdiv{
+  scrollbar-width: none;
+  height:290px;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+
+.loader{
+
+  height:80px
+}
+.load{
+ 
+  height: 20px;
+  margin-top: 5px;
+  background-color: blue;
+  background: linear-gradient(to right,blue,rgb(15, 157, 170),white);
+  animation: loader 3s infinite  linear;
+  
+}
+@keyframes loader {
+
+  0%{
+    
+    background-position: -800px,0px;
+  }
+  50%{
+    background-position: 400px,0px;
+
+  }
+  100%{
+    background-position: 800px,0px;
+  }
+  
+}
+
