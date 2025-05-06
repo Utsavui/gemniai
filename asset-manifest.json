@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/gemniai/static/css/main.b949b1ba.css",
+    "main.js": "/gemniai/static/js/main.96df7b63.js",
+    "static/js/453.e1a4b6e9.chunk.js": "/gemniai/static/js/453.e1a4b6e9.chunk.js",
+    "static/media/gallery.jpg": "/gemniai/static/media/gallery.9b827b1b333489852fe3.jpg",
+    "static/media/settings.png": "/gemniai/static/media/settings.fd9cb79a2028b66f67eb.png",
+    "static/media/restore.png": "/gemniai/static/media/restore.d126cb101391d1675808.png",
+    "static/media/gems.png": "/gemniai/static/media/gems.f00490cf1b272aa9c715.png",
+    "index.html": "/gemniai/index.html",
+    "main.b949b1ba.css.map": "/gemniai/static/css/main.b949b1ba.css.map",
+    "main.96df7b63.js.map": "/gemniai/static/js/main.96df7b63.js.map",
+    "453.e1a4b6e9.chunk.js.map": "/gemniai/static/js/453.e1a4b6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b949b1ba.css",
+    "static/js/main.96df7b63.js"
+  ]
+}
